@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>unemmet</title>
+</head>
+<body>
+	<textarea name="" id="" cols="30" rows="10" class="input" onkeyup="f()"></textarea>
+	<textarea name="" id="" cols="30" rows="10" class="output"></textarea>
+	<script>
+	function f(){
+		var input = document.getElementsByClassName("input")[0];
+		var inputValue = input.value;
+		var toOutput
+		if (inputValue) {
+			toOutput = "{" + inputValue + "}";
+		} else {
+			toOutput = "";
+		}
+		document.getElementsByClassName("output")[0].value = toOutput;
+	}
+	</script>
+</body>
+</html>
